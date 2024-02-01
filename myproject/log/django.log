@@ -1,0 +1,135 @@
+Watching for file changes with StatReloader
+Открыта страница main
+"GET / HTTP/1.1" 200 132
+Открыта страница about
+"GET /about/ HTTP/1.1" 200 39
+INFO 2024-01-30 18:26:27,956 autoreload 12536 11140 Watching for file changes with StatReloader
+INFO 2024-01-30 18:26:29,516 views 12536 12376 main opened
+INFO 2024-01-30 18:26:29,518 basehttp 12536 12376 "GET / HTTP/1.1" 200 132
+INFO 2024-01-30 18:26:36,213 views 12536 12376 about opened
+INFO 2024-01-30 18:26:36,214 basehttp 12536 12376 "GET /about/ HTTP/1.1" 200 39
+INFO 2024-01-30 20:27:20,835 autoreload 6228 9896 Watching for file changes with StatReloader
+INFO 2024-01-30 20:27:22,168 views 6228 14792 main was opened
+INFO 2024-01-30 20:27:22,170 basehttp 6228 14792 "GET / HTTP/1.1" 200 134
+INFO 2024-01-30 20:28:17,367 autoreload 12148 6608 Watching for file changes with StatReloader
+INFO 2024-01-30 20:28:18,715 views 12148 17008 main was opened
+INFO 2024-01-30 20:28:18,717 basehttp 12148 17008 "GET / HTTP/1.1" 200 39
+INFO 2024-01-30 20:28:23,375 views 12148 17008 main was opened
+INFO 2024-01-30 20:28:23,376 basehttp 12148 17008 "GET / HTTP/1.1" 200 39
+INFO 2024-01-30 20:28:31,682 views 12148 17008 main was opened
+INFO 2024-01-30 20:28:31,683 basehttp 12148 17008 "GET / HTTP/1.1" 200 39
+INFO 2024-01-30 20:29:11,419 autoreload 1160 17604 Watching for file changes with StatReloader
+INFO 2024-01-30 20:29:12,564 views 1160 19008 main was opened
+INFO 2024-01-30 20:29:12,566 basehttp 1160 19008 "GET / HTTP/1.1" 200 133
+INFO 2024-01-31 17:31:16,443 autoreload 17204 16672 Watching for file changes with StatReloader
+INFO 2024-01-31 17:31:49,382 autoreload 11108 14596 Watching for file changes with StatReloader
+INFO 2024-01-31 17:32:17,821 autoreload 4444 2884 Watching for file changes with StatReloader
+INFO 2024-01-31 17:32:19,326 views 4444 2136 main was opened
+INFO 2024-01-31 17:32:19,328 basehttp 4444 2136 "GET / HTTP/1.1" 200 133
+WARNING 2024-01-31 17:32:19,429 log 4444 2136 Not Found: /favicon.ico
+WARNING 2024-01-31 17:32:19,430 basehttp 4444 2136 "GET /favicon.ico HTTP/1.1" 404 2440
+INFO 2024-01-31 17:34:23,425 autoreload 4652 3648 Watching for file changes with StatReloader
+INFO 2024-01-31 17:34:25,751 views 4652 7920 main was opened
+ERROR 2024-01-31 17:34:25,824 log 4652 7920 Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\MEDGORA\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\MEDGORA\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Study\Django\project\myproject\myapp\views.py", line 13, in main
+    return render_template("main.html")
+  File "C:\Users\MEDGORA\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\flask\templating.py", line 150, in render_template
+    app = current_app._get_current_object()  # type: ignore[attr-defined]
+  File "C:\Users\MEDGORA\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\werkzeug\local.py", line 508, in _get_current_object
+    raise RuntimeError(unbound_message) from None
+RuntimeError: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+ERROR 2024-01-31 17:34:25,830 basehttp 4652 7920 "GET / HTTP/1.1" 500 75111
+INFO 2024-01-31 17:35:42,239 autoreload 7492 8180 Watching for file changes with StatReloader
+INFO 2024-01-31 17:35:44,165 views 7492 16396 main was opened
+ERROR 2024-01-31 17:35:44,204 log 7492 16396 Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\MEDGORA\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\MEDGORA\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Study\Django\project\myproject\myapp\views.py", line 13, in main
+    return HttpResponse({main.html})
+AttributeError: 'function' object has no attribute 'html'
+ERROR 2024-01-31 17:35:44,207 basehttp 7492 16396 "GET / HTTP/1.1" 500 65760
+INFO 2024-01-31 17:36:01,503 autoreload 7492 8180 D:\Study\Django\project\myproject\myapp\views.py changed, reloading.
+INFO 2024-01-31 17:36:02,181 autoreload 13024 17240 Watching for file changes with StatReloader
+INFO 2024-01-31 17:39:36,834 autoreload 7108 6004 Watching for file changes with StatReloader
+INFO 2024-01-31 17:39:39,740 views 7108 17116 main was opened
+ERROR 2024-01-31 17:39:39,779 log 7108 17116 Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\MEDGORA\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\MEDGORA\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Study\Django\project\myproject\myapp\views.py", line 13, in main
+    return render("main.html")
+TypeError: render() missing 1 required positional argument: 'template_name'
+ERROR 2024-01-31 17:39:39,781 basehttp 7108 17116 "GET / HTTP/1.1" 500 65790
+INFO 2024-01-31 17:40:05,385 autoreload 10440 12212 Watching for file changes with StatReloader
+INFO 2024-01-31 17:40:07,017 views 10440 10504 main was opened
+ERROR 2024-01-31 17:40:07,073 log 10440 10504 Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\MEDGORA\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\MEDGORA\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Study\Django\project\myproject\myapp\views.py", line 13, in main
+    return render(request, "main.html")
+  File "C:\Users\MEDGORA\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\MEDGORA\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\MEDGORA\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: main.html
+ERROR 2024-01-31 17:40:07,078 basehttp 10440 10504 "GET / HTTP/1.1" 500 80669
+INFO 2024-01-31 17:42:20,552 autoreload 664 16856 Watching for file changes with StatReloader
+INFO 2024-01-31 17:42:21,839 views 664 15292 main was opened
+ERROR 2024-01-31 17:42:21,899 log 664 15292 Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\MEDGORA\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\MEDGORA\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Study\Django\project\myproject\myapp\views.py", line 13, in main
+    return render(request, "main.html")
+  File "C:\Users\MEDGORA\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\MEDGORA\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\MEDGORA\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: main.html
+ERROR 2024-01-31 17:42:21,905 basehttp 664 15292 "GET / HTTP/1.1" 500 80990
+INFO 2024-01-31 17:43:11,528 autoreload 664 16856 D:\Study\Django\project\myproject\myproject\settings.py changed, reloading.
+INFO 2024-01-31 17:43:12,223 autoreload 3872 3512 Watching for file changes with StatReloader
+INFO 2024-01-31 17:43:14,061 views 3872 16444 main was opened
+ERROR 2024-01-31 17:43:14,116 log 3872 16444 Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\MEDGORA\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\MEDGORA\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Study\Django\project\myproject\myapp\views.py", line 13, in main
+    return render(request, "main.html")
+  File "C:\Users\MEDGORA\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\MEDGORA\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\MEDGORA\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: main.html
+ERROR 2024-01-31 17:43:14,122 basehttp 3872 16444 "GET / HTTP/1.1" 500 80669
+INFO 2024-01-31 17:43:36,076 autoreload 3872 3512 D:\Study\Django\project\myproject\myapp\views.py changed, reloading.
+INFO 2024-01-31 17:43:36,830 autoreload 15508 14992 Watching for file changes with StatReloader
+INFO 2024-01-31 17:43:38,203 views 15508 6064 main was opened
+INFO 2024-01-31 17:43:38,204 basehttp 15508 6064 "GET / HTTP/1.1" 200 133
