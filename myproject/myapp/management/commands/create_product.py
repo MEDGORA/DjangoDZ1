@@ -5,6 +5,6 @@ class Command(BaseCommand):
     help = "Create product."
 
     def handle(self, *args, **kwargs):
-        product = Product(name="Картошка", description ="Просто картошка", price="60" , digits="12")
+        product = Product(name="Шоколадка", description ="Просто шоколадка", price="40" , digits="1")
         product.save()
         self.stdout.write(f'{product}')

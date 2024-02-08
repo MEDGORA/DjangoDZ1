@@ -133,3 +133,173 @@ INFO 2024-01-31 17:43:36,076 autoreload 3872 3512 D:\Study\Django\project\myproj
 INFO 2024-01-31 17:43:36,830 autoreload 15508 14992 Watching for file changes with StatReloader
 INFO 2024-01-31 17:43:38,203 views 15508 6064 main was opened
 INFO 2024-01-31 17:43:38,204 basehttp 15508 6064 "GET / HTTP/1.1" 200 133
+INFO 2024-02-07 19:19:22,676 autoreload 2160 8440 Watching for file changes with StatReloader
+INFO 2024-02-07 19:19:27,376 views 2160 4776 main was opened
+INFO 2024-02-07 19:19:27,385 basehttp 2160 4776 "GET / HTTP/1.1" 200 313
+WARNING 2024-02-07 19:19:27,492 log 2160 4776 Not Found: /favicon.ico
+WARNING 2024-02-07 19:19:27,493 basehttp 2160 4776 "GET /favicon.ico HTTP/1.1" 404 2440
+INFO 2024-02-07 19:19:34,684 views 2160 4776 about was opened
+INFO 2024-02-07 19:19:34,687 basehttp 2160 4776 "GET /about/ HTTP/1.1" 200 248
+INFO 2024-02-07 19:20:12,201 views 2160 4776 main was opened
+INFO 2024-02-07 19:20:12,203 basehttp 2160 4776 "GET / HTTP/1.1" 200 313
+INFO 2024-02-08 18:36:42,372 autoreload 4392 208 Watching for file changes with StatReloader
+INFO 2024-02-08 18:36:44,314 views 4392 5752 main was opened
+INFO 2024-02-08 18:36:44,329 basehttp 4392 5752 "GET / HTTP/1.1" 200 327
+WARNING 2024-02-08 18:36:44,448 log 4392 5752 Not Found: /favicon.ico
+WARNING 2024-02-08 18:36:44,449 basehttp 4392 5752 "GET /favicon.ico HTTP/1.1" 404 2632
+INFO 2024-02-08 18:36:56,798 views 4392 5752 about was opened
+INFO 2024-02-08 18:36:56,802 basehttp 4392 5752 "GET /about/ HTTP/1.1" 200 208
+INFO 2024-02-08 18:37:10,598 basehttp 4392 5752 "GET /get_user/1 HTTP/1.1" 200 419
+INFO 2024-02-08 18:40:59,251 autoreload 14964 17400 Watching for file changes with StatReloader
+INFO 2024-02-08 18:41:01,243 views 14964 16480 main was opened
+INFO 2024-02-08 18:41:01,253 basehttp 14964 16480 "GET / HTTP/1.1" 200 350
+INFO 2024-02-08 18:42:26,733 autoreload 14332 6684 Watching for file changes with StatReloader
+INFO 2024-02-08 18:42:28,708 views 14332 15736 main was opened
+INFO 2024-02-08 18:42:28,720 basehttp 14332 15736 "GET / HTTP/1.1" 200 355
+INFO 2024-02-08 18:42:32,330 views 14332 15736 about was opened
+INFO 2024-02-08 18:42:32,332 basehttp 14332 15736 "GET /about/ HTTP/1.1" 200 208
+INFO 2024-02-08 18:42:58,965 autoreload 18192 16692 Watching for file changes with StatReloader
+INFO 2024-02-08 18:43:00,826 views 18192 7044 main was opened
+INFO 2024-02-08 18:43:00,836 basehttp 18192 7044 "GET / HTTP/1.1" 200 332
+INFO 2024-02-08 18:43:34,343 autoreload 1184 3476 Watching for file changes with StatReloader
+INFO 2024-02-08 18:43:35,772 views 1184 14888 main was opened
+INFO 2024-02-08 18:43:35,783 basehttp 1184 14888 "GET / HTTP/1.1" 200 310
+INFO 2024-02-08 18:43:38,548 views 1184 14888 about was opened
+INFO 2024-02-08 18:43:38,552 basehttp 1184 14888 "GET /about/ HTTP/1.1" 200 208
+INFO 2024-02-08 18:45:08,596 autoreload 7048 4248 Watching for file changes with StatReloader
+INFO 2024-02-08 18:45:09,727 views 7048 3896 main was opened
+ERROR 2024-02-08 18:45:09,838 log 7048 3896 Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\MEDGORA\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\MEDGORA\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Study\Django_1\project\myproject\myapp\views.py", line 26, in main
+    return render(request, "myapp/main.html")
+  File "C:\Users\MEDGORA\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\MEDGORA\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\MEDGORA\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\MEDGORA\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Users\MEDGORA\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\MEDGORA\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\MEDGORA\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\MEDGORA\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Users\MEDGORA\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+  File "C:\Users\MEDGORA\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\MEDGORA\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\MEDGORA\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\MEDGORA\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Users\MEDGORA\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\MEDGORA\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\MEDGORA\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\MEDGORA\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "C:\Users\MEDGORA\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\template\defaulttags.py", line 478, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\MEDGORA\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Users\MEDGORA\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\urls\resolvers.py", line 848, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'get_user' with no arguments not found. 1 pattern(s) tried: ['get_user/(?P<user_id>[0-9]+)\\Z']
+ERROR 2024-02-08 18:45:09,862 basehttp 7048 3896 "GET / HTTP/1.1" 500 161141
+INFO 2024-02-08 18:53:32,504 autoreload 10288 2800 Watching for file changes with StatReloader
+INFO 2024-02-08 18:53:34,295 views 10288 11760 main was opened
+INFO 2024-02-08 18:53:34,306 basehttp 10288 11760 "GET / HTTP/1.1" 200 469
+ERROR 2024-02-08 18:53:36,587 log 10288 11760 Internal Server Error: /get_all_users/
+Traceback (most recent call last):
+  File "C:\Users\MEDGORA\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\MEDGORA\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: get_all_users() missing 1 required positional argument: 'user_id'
+ERROR 2024-02-08 18:53:36,590 basehttp 10288 11760 "GET /get_all_users/ HTTP/1.1" 500 63051
+INFO 2024-02-08 18:54:26,663 autoreload 9040 18416 Watching for file changes with StatReloader
+INFO 2024-02-08 18:54:29,233 views 9040 3224 main was opened
+INFO 2024-02-08 18:54:29,245 basehttp 9040 3224 "GET / HTTP/1.1" 200 469
+ERROR 2024-02-08 18:54:30,332 log 9040 3224 Internal Server Error: /get_all_users/
+Traceback (most recent call last):
+  File "C:\Users\MEDGORA\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\MEDGORA\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Study\Django_1\project\myproject\myapp\views.py", line 46, in get_all_users
+    user = get_object_or_404(User)
+  File "C:\Users\MEDGORA\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\shortcuts.py", line 85, in get_object_or_404
+    return queryset.get(*args, **kwargs)
+  File "C:\Users\MEDGORA\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\db\models\query.py", line 650, in get
+    raise self.model.MultipleObjectsReturned(
+myapp.models.User.MultipleObjectsReturned: get() returned more than one User -- it returned 3!
+ERROR 2024-02-08 18:54:30,337 basehttp 9040 3224 "GET /get_all_users/ HTTP/1.1" 500 76463
+INFO 2024-02-08 18:54:52,756 autoreload 9040 18416 D:\Study\Django_1\project\myproject\myapp\views.py changed, reloading.
+INFO 2024-02-08 18:54:53,483 autoreload 16040 9692 Watching for file changes with StatReloader
+INFO 2024-02-08 19:06:56,996 autoreload 2272 8024 Watching for file changes with StatReloader
+INFO 2024-02-08 19:06:59,566 views 2272 6996 main was opened
+INFO 2024-02-08 19:06:59,574 basehttp 2272 6996 "GET / HTTP/1.1" 200 469
+INFO 2024-02-08 19:07:02,026 basehttp 2272 6996 "GET /get_all_users/ HTTP/1.1" 200 650
+INFO 2024-02-08 19:07:26,134 autoreload 14444 16944 Watching for file changes with StatReloader
+INFO 2024-02-08 19:07:27,424 views 14444 16696 main was opened
+INFO 2024-02-08 19:07:27,433 basehttp 14444 16696 "GET / HTTP/1.1" 200 469
+INFO 2024-02-08 19:07:28,758 basehttp 14444 16696 "GET /get_all_users/ HTTP/1.1" 200 650
+INFO 2024-02-08 19:07:59,176 autoreload 6992 14096 Watching for file changes with StatReloader
+INFO 2024-02-08 19:08:00,460 views 6992 2908 main was opened
+INFO 2024-02-08 19:08:00,470 basehttp 6992 2908 "GET / HTTP/1.1" 200 469
+INFO 2024-02-08 19:08:03,239 basehttp 6992 2908 "GET /get_all_users/ HTTP/1.1" 200 650
+INFO 2024-02-08 19:09:23,844 autoreload 2356 3636 Watching for file changes with StatReloader
+INFO 2024-02-08 19:09:25,291 views 2356 17816 main was opened
+INFO 2024-02-08 19:09:25,301 basehttp 2356 17816 "GET / HTTP/1.1" 200 469
+INFO 2024-02-08 19:09:27,830 basehttp 2356 17816 "GET /get_all_users/ HTTP/1.1" 200 1238
+INFO 2024-02-08 19:11:49,777 autoreload 13992 3588 Watching for file changes with StatReloader
+INFO 2024-02-08 19:11:51,163 views 13992 11324 main was opened
+INFO 2024-02-08 19:11:51,174 basehttp 13992 11324 "GET / HTTP/1.1" 200 469
+INFO 2024-02-08 19:11:52,869 basehttp 13992 11324 "GET /get_all_users/ HTTP/1.1" 200 723
+INFO 2024-02-08 19:31:51,699 autoreload 6196 12020 Watching for file changes with StatReloader
+INFO 2024-02-08 19:31:53,118 views 6196 11348 main was opened
+INFO 2024-02-08 19:31:53,132 basehttp 6196 11348 "GET / HTTP/1.1" 200 469
+ERROR 2024-02-08 19:32:07,979 log 6196 11348 Internal Server Error: /user_orders/1
+Traceback (most recent call last):
+  File "C:\Users\MEDGORA\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\MEDGORA\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Study\Django_1\project\myproject\myapp\views.py", line 51, in user_orders
+    orders = Order.objects.filter(user=user).order_by('id')[:5]
+  File "C:\Users\MEDGORA\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\MEDGORA\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\db\models\query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "C:\Users\MEDGORA\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\db\models\query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\MEDGORA\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\db\models\query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\MEDGORA\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\db\models\sql\query.py", line 1602, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\Users\MEDGORA\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\db\models\sql\query.py", line 1634, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Users\MEDGORA\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\db\models\sql\query.py", line 1484, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg, summarize)
+  File "C:\Users\MEDGORA\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\db\models\sql\query.py", line 1296, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+  File "C:\Users\MEDGORA\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\db\models\sql\query.py", line 1761, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'user' into field. Choices are: customer, customer_id, date_ordered, id, products, total_price
+ERROR 2024-02-08 19:32:07,989 basehttp 6196 11348 "GET /user_orders/1 HTTP/1.1" 500 113060
+INFO 2024-02-08 19:38:29,729 autoreload 460 11028 Watching for file changes with StatReloader
+INFO 2024-02-08 19:38:31,066 views 460 15872 main was opened
+INFO 2024-02-08 19:38:31,075 basehttp 460 15872 "GET / HTTP/1.1" 200 469
+INFO 2024-02-08 19:38:32,750 basehttp 460 15872 "GET /get_all_users/ HTTP/1.1" 200 1336

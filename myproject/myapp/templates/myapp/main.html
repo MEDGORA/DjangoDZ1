@@ -1,0 +1,9 @@
+{% extends 'myapp/base.html' %}
+
+{% block title %}Обо мне{% endblock %}
+
+{% block content %}
+    <h1>"Это главная страница."</h1>
+    <p>Чтобы увидеть информацию про меня перейдите в <td><a href="{% url 'about' %}">about</a></p>
+    <p>Чтобы увидеть информацию о пользователях перейдите в <td><a href="{% url 'get_all_users' %}"> get_all_users</a></p>
+{% endblock %}
