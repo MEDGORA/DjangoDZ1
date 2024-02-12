@@ -1,0 +1,14 @@
+{% extends 'myapp/base.html' %}
+
+{% block title %}Пользователи из г. Москва{% endblock %}
+
+{% block content %}
+<h2>Пользователи из г. Москва </h2>
+<table>
+    {% for user in users %}
+        <tr>
+            <td><p>Имя: {{ user.name }}, почта: {{ user.email }}, телефон: {{ user.phone }}, дата регистрации: {{ user.date_created }}</p></td>
+        </tr>
+    {% endfor %}
+</table>
+{% endblock %}

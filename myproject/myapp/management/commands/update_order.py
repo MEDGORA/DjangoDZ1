@@ -1,3 +1,4 @@
+import datetime
 from django.core.management.base import BaseCommand, CommandParser
 from myapp.models import Order
 
@@ -9,7 +10,7 @@ class Command(BaseCommand):
         parser.add_argument("customer", type=list, help="customer")
         parser.add_argument("products", type=list, help="products")
         parser.add_argument("total_price", type=float, help="total price")
-        parser.add_argument("date_ordered", type=str, help="date of order")
+        parser.add_argument("date_ordered", type=datetime, help="date of order")
 
     def handle(self, *args, **kwargs):
         pk = kwargs["pk"]

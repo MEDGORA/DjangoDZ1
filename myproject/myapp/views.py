@@ -55,4 +55,12 @@ def order_full(request, order_id):
     order = get_object_or_404(Order, pk=order_id)
     return render(request, 'myapp/order_full.html', {'order': order})
 
+def get_user_Moscow(request):
+    users = get_list_or_404(User, adress="г. Москва")
+    return render(request, 'myapp/get_user_Moscow.html', {'users': users})
+
+def get_user_Saint_Petersburg(request):
+    users = get_list_or_404(User, adress="г. Санкт-Петербург")
+    return render(request, 'myapp/get_user_Saint_Petersburg.html', {'users': users})
+
 

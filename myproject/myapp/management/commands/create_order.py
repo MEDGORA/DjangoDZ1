@@ -15,7 +15,7 @@ class Command(BaseCommand):
     """
 
     def handle(self, *args, **kwargs):
-        order = Order(customer=User.objects.filter(pk="1").first(), products=[Product.objects.filter(pk="1").first()], 
+        order = Order(customer=User.objects.filter(pk="1").first(), products=set([Product.objects.filter(pk="1").first(), Product.objects.filter(pk="3").first()]), 
                       total_price="60")
         order.save()
         self.stdout.write(f'{order}')

@@ -5,12 +5,9 @@
 {% block content %}
     <h1>Информация о всех пользователях</h1>
     <table>
-        {{ users }}
-    </table>
-    <table>
-        {% for id in users %}
+        {% for user in users %}
         <tr>
-            <p>Имя: {{ user.name }} почта: {{ user.email }}, телефон: {{ user.phone }}, адресс: {{ user.adress }}, дата регистрации: {{ user.date_created }}</p>
+            <p>Имя: {{ user.name }}, почта: {{ user.email }}, телефон: {{ user.phone }}, адресс: {{ user.adress }}, дата регистрации: {{ user.date_created }}</p>
         </tr>
         {% endfor %}
     </table>
