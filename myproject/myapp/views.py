@@ -5,6 +5,9 @@ from django.shortcuts import render, get_object_or_404, get_list_or_404
 
 from .models import User, Product, Order
 
+from .forms import ProductForm
+from django.core.files.storage import FileSystemStorage
+
 from flask import render_template
 
 logger = logging.getLogger(__name__)
@@ -62,5 +65,26 @@ def get_user_Moscow(request):
 def get_user_Saint_Petersburg(request):
     users = get_list_or_404(User, adress="г. Санкт-Петербург")
     return render(request, 'myapp/get_user_Saint_Petersburg.html', {'users': users})
+
+def product_form(request):
+    if request.method == "POST":
+        form = ProductForm(request.POST, request.FILES)
+        message = "Ошибка данных"
+        if form.is_valid():
+            name = form.cleaned_data["name"]
+            description = form.cleaned_data["description"]
+            price = form.cleaned_data["price"]
+            digits = form.cleaned_data["digits"]
+            image = form.cleaned_data["image"]
+            fs = FileSystemStorage()
+            fs.save(image.name, image)
+            product = Product(name=name, description=description, price=price , digits=digits, image=image)
+            product.save()
+            message = "Новый продукт успешно добавлен"
+            logger.info(f"Добавили в базу данных Product: {name}, описание: {description}, цена: {price}, количество: {digits}, изображение: {image}")
+    else:
+        form = ProductForm()   
+        message = "Заполните форму"
+    return render(request, 'myapp/product_form.html', {'form': form, 'message': message})
 
 

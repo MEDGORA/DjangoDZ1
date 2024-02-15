@@ -450,3 +450,160 @@ INFO 2024-02-12 18:41:54,256 basehttp 16132 4736 "GET / HTTP/1.1" 200 889
 INFO 2024-02-12 18:41:55,283 basehttp 16132 4736 "GET /get_user_Saint_Petersburg/ HTTP/1.1" 200 463
 INFO 2024-02-12 18:42:02,266 basehttp 16132 4736 "GET /get_user_Moscow/ HTTP/1.1" 200 620
 INFO 2024-02-12 18:42:08,531 basehttp 16132 4736 "GET /get_all_users/ HTTP/1.1" 200 954
+INFO 2024-02-13 18:21:51,467 autoreload 15620 15848 Watching for file changes with StatReloader
+INFO 2024-02-13 18:21:53,614 views 15620 16508 main was opened
+INFO 2024-02-13 18:21:53,628 basehttp 15620 16508 "GET / HTTP/1.1" 200 889
+WARNING 2024-02-13 18:21:53,744 log 15620 16508 Not Found: /favicon.ico
+WARNING 2024-02-13 18:21:53,745 basehttp 15620 16508 "GET /favicon.ico HTTP/1.1" 404 3765
+INFO 2024-02-13 18:23:30,326 autoreload 17864 6344 Watching for file changes with StatReloader
+INFO 2024-02-13 18:23:31,701 views 17864 3256 main was opened
+INFO 2024-02-13 18:23:31,711 basehttp 17864 3256 "GET / HTTP/1.1" 200 1050
+ERROR 2024-02-13 18:23:33,937 log 17864 3256 Internal Server Error: /product_form/
+Traceback (most recent call last):
+  File "C:\Users\MEDGORA\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\MEDGORA\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Study\Django_1\project\myproject\myapp\views.py", line 79, in product_form
+    return render(request, 'myapp/product_form.html', {'form': form})
+UnboundLocalError: local variable 'form' referenced before assignment
+ERROR 2024-02-13 18:23:33,941 basehttp 17864 3256 "GET /product_form/ HTTP/1.1" 500 66090
+INFO 2024-02-13 18:24:25,669 autoreload 9404 15264 Watching for file changes with StatReloader
+INFO 2024-02-13 18:24:26,858 views 9404 1036 main was opened
+INFO 2024-02-13 18:24:26,868 basehttp 9404 1036 "GET / HTTP/1.1" 200 1050
+ERROR 2024-02-13 18:24:29,045 log 9404 1036 Internal Server Error: /product_form/
+Traceback (most recent call last):
+  File "C:\Users\MEDGORA\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\MEDGORA\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Study\Django_1\project\myproject\myapp\views.py", line 79, in product_form
+    return render(request, 'myapp/product_form.html', {'form': form})
+UnboundLocalError: local variable 'form' referenced before assignment
+ERROR 2024-02-13 18:24:29,048 basehttp 9404 1036 "GET /product_form/ HTTP/1.1" 500 66090
+INFO 2024-02-13 18:27:34,459 autoreload 6600 15252 Watching for file changes with StatReloader
+INFO 2024-02-13 18:27:35,670 views 6600 11072 main was opened
+INFO 2024-02-13 18:27:35,680 basehttp 6600 11072 "GET / HTTP/1.1" 200 1050
+ERROR 2024-02-13 18:27:37,833 log 6600 11072 Internal Server Error: /product_form/
+Traceback (most recent call last):
+  File "C:\Users\MEDGORA\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\MEDGORA\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Study\Django_1\project\myproject\myapp\views.py", line 78, in product_form
+    form = product_form()
+TypeError: product_form() missing 1 required positional argument: 'request'
+ERROR 2024-02-13 18:27:37,835 basehttp 6600 11072 "GET /product_form/ HTTP/1.1" 500 66169
+INFO 2024-02-13 18:28:53,865 autoreload 3900 16456 Watching for file changes with StatReloader
+INFO 2024-02-13 18:28:55,405 views 3900 17700 main was opened
+INFO 2024-02-13 18:28:55,417 basehttp 3900 17700 "GET / HTTP/1.1" 200 1050
+ERROR 2024-02-13 18:28:57,628 log 3900 17700 Internal Server Error: /product_form/
+Traceback (most recent call last):
+  File "C:\Users\MEDGORA\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\MEDGORA\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Study\Django_1\project\myproject\myapp\views.py", line 78, in product_form
+    form = product_form()
+TypeError: product_form() missing 1 required positional argument: 'request'
+ERROR 2024-02-13 18:28:57,632 basehttp 3900 17700 "GET /product_form/ HTTP/1.1" 500 66169
+INFO 2024-02-13 18:30:17,342 autoreload 10668 16408 Watching for file changes with StatReloader
+INFO 2024-02-13 18:30:18,709 views 10668 13236 main was opened
+INFO 2024-02-13 18:30:18,721 basehttp 10668 13236 "GET / HTTP/1.1" 200 1050
+INFO 2024-02-13 18:30:21,014 basehttp 10668 13236 "GET /product_form/ HTTP/1.1" 200 1021
+INFO 2024-02-13 18:47:07,165 autoreload 7784 14424 Watching for file changes with StatReloader
+INFO 2024-02-13 18:47:08,564 views 7784 2600 main was opened
+INFO 2024-02-13 18:47:08,575 basehttp 7784 2600 "GET / HTTP/1.1" 200 1050
+WARNING 2024-02-13 18:47:08,715 log 7784 2600 Not Found: /favicon.ico
+WARNING 2024-02-13 18:47:08,716 basehttp 7784 2600 "GET /favicon.ico HTTP/1.1" 404 3765
+INFO 2024-02-13 18:47:12,074 basehttp 7784 2600 "GET /product_form/ HTTP/1.1" 200 1386
+INFO 2024-02-13 18:49:41,447 autoreload 13472 13484 Watching for file changes with StatReloader
+INFO 2024-02-13 18:49:44,178 views 13472 5592 main was opened
+INFO 2024-02-13 18:49:44,189 basehttp 13472 5592 "GET / HTTP/1.1" 200 1050
+INFO 2024-02-13 18:49:45,200 basehttp 13472 5592 "GET /product_form/ HTTP/1.1" 200 1281
+INFO 2024-02-13 19:00:19,421 autoreload 15100 15316 Watching for file changes with StatReloader
+INFO 2024-02-13 19:00:20,856 views 15100 7768 main was opened
+INFO 2024-02-13 19:00:20,867 basehttp 15100 7768 "GET / HTTP/1.1" 200 1050
+INFO 2024-02-13 19:00:24,207 basehttp 15100 7768 "GET /product_form/ HTTP/1.1" 200 1324
+INFO 2024-02-13 19:00:39,495 basehttp 15100 7768 "POST /product_form/ HTTP/1.1" 200 1378
+INFO 2024-02-13 19:01:22,918 autoreload 15100 15316 D:\Study\Django_1\project\myproject\myapp\views.py changed, reloading.
+INFO 2024-02-13 19:01:23,680 autoreload 14680 18268 Watching for file changes with StatReloader
+INFO 2024-02-13 19:01:30,106 autoreload 12124 9816 Watching for file changes with StatReloader
+INFO 2024-02-13 19:01:31,632 views 12124 17916 main was opened
+INFO 2024-02-13 19:01:31,642 basehttp 12124 17916 "GET / HTTP/1.1" 200 1050
+INFO 2024-02-13 19:01:33,726 basehttp 12124 17916 "GET /product_form/ HTTP/1.1" 200 1324
+INFO 2024-02-13 19:01:41,863 basehttp 12124 17916 "POST /product_form/ HTTP/1.1" 200 1397
+INFO 2024-02-13 19:03:12,967 autoreload 8376 2384 Watching for file changes with StatReloader
+INFO 2024-02-13 19:03:14,553 views 8376 18124 main was opened
+INFO 2024-02-13 19:03:14,562 basehttp 8376 18124 "GET / HTTP/1.1" 200 1050
+INFO 2024-02-13 19:03:17,120 basehttp 8376 18124 "GET /product_form/ HTTP/1.1" 200 1299
+INFO 2024-02-13 19:03:32,339 autoreload 13880 8000 Watching for file changes with StatReloader
+INFO 2024-02-13 19:03:34,338 views 13880 16052 main was opened
+INFO 2024-02-13 19:03:34,349 basehttp 13880 16052 "GET / HTTP/1.1" 200 1050
+INFO 2024-02-13 19:03:36,848 basehttp 13880 16052 "GET /product_form/ HTTP/1.1" 200 1324
+INFO 2024-02-13 19:03:41,869 views 13880 16052 main was opened
+INFO 2024-02-13 19:03:41,871 basehttp 13880 16052 "GET / HTTP/1.1" 200 1050
+INFO 2024-02-13 19:03:47,173 basehttp 13880 16052 "GET /product_form/ HTTP/1.1" 200 1324
+INFO 2024-02-13 19:17:36,243 autoreload 5928 16020 Watching for file changes with StatReloader
+INFO 2024-02-13 19:17:38,344 views 5928 7784 main was opened
+INFO 2024-02-13 19:17:38,355 basehttp 5928 7784 "GET / HTTP/1.1" 200 1050
+INFO 2024-02-13 19:17:40,439 basehttp 5928 7784 "GET /product_form/ HTTP/1.1" 200 1499
+INFO 2024-02-13 19:27:27,519 autoreload 15348 13968 Watching for file changes with StatReloader
+INFO 2024-02-13 19:27:29,290 views 15348 15848 main was opened
+INFO 2024-02-13 19:27:29,301 basehttp 15348 15848 "GET / HTTP/1.1" 200 1050
+INFO 2024-02-13 19:27:31,796 basehttp 15348 15848 "GET /product_form/ HTTP/1.1" 200 1499
+ERROR 2024-02-13 19:28:48,640 log 15348 15848 Internal Server Error: /product_form/
+Traceback (most recent call last):
+  File "C:\Users\MEDGORA\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\MEDGORA\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\db\backends\sqlite3\base.py", line 328, in execute
+    return super().execute(query, params)
+sqlite3.OperationalError: table myapp_product has no column named image
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\MEDGORA\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\MEDGORA\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Study\Django_1\project\myproject\myapp\views.py", line 82, in product_form
+    product.save()
+  File "C:\Users\MEDGORA\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\db\models\base.py", line 822, in save
+    self.save_base(
+  File "C:\Users\MEDGORA\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\db\models\base.py", line 909, in save_base
+    updated = self._save_table(
+  File "C:\Users\MEDGORA\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\db\models\base.py", line 1067, in _save_table
+    results = self._do_insert(
+  File "C:\Users\MEDGORA\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\db\models\base.py", line 1108, in _do_insert
+    return manager._insert(
+  File "C:\Users\MEDGORA\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\MEDGORA\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\db\models\query.py", line 1845, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "C:\Users\MEDGORA\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\db\models\sql\compiler.py", line 1823, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\MEDGORA\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+  File "C:\Users\MEDGORA\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\MEDGORA\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\MEDGORA\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\MEDGORA\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\MEDGORA\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\MEDGORA\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\db\backends\sqlite3\base.py", line 328, in execute
+    return super().execute(query, params)
+django.db.utils.OperationalError: table myapp_product has no column named image
+ERROR 2024-02-13 19:28:48,652 basehttp 15348 15848 "POST /product_form/ HTTP/1.1" 500 157095
+INFO 2024-02-14 19:30:43,957 autoreload 15792 2644 Watching for file changes with StatReloader
+INFO 2024-02-14 19:30:45,588 views 15792 8824 main was opened
+INFO 2024-02-14 19:30:45,617 basehttp 15792 8824 "GET / HTTP/1.1" 200 1050
+WARNING 2024-02-14 19:30:45,723 log 15792 8824 Not Found: /favicon.ico
+WARNING 2024-02-14 19:30:45,724 basehttp 15792 8824 "GET /favicon.ico HTTP/1.1" 404 3765
+INFO 2024-02-14 19:30:48,959 basehttp 15792 8824 "GET /product_form/ HTTP/1.1" 200 1499
+INFO 2024-02-14 19:31:12,367 views 15792 8824 Добавили в базу данных Product: Мороженное, описание: Вкусное мороженное, цена: 25, количество: 1, изображение: 1634751394_43-mykaleidoscope-ru-p-morozhenoe-47.jpg
+INFO 2024-02-14 19:31:12,372 basehttp 15792 8824 "POST /product_form/ HTTP/1.1" 200 1612

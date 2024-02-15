@@ -17,6 +17,7 @@ class Product(models.Model):
     description = models.TextField()
     price = models.DecimalField(max_digits=8, decimal_places=2)
     digits = models.IntegerField()
+    image = models.ImageField(default="", blank=True)
     date_product_added = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):

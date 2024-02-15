@@ -1,0 +1,13 @@
+{% extends 'myapp/base.html' %}
+
+{% block title %}Добавление нового товара{% endblock %}
+
+{% block content %}
+    <h1>Введите информацию о продукте:</h1>
+    <form action="" method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit" value="Отправить">
+    </form>
+    <h2>{{ message }}</h2>
+{% endblock %}
