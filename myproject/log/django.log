@@ -987,3 +987,12 @@ INFO 2024-02-16 20:12:05,445 basehttp 9444 9532 "GET /admin/myapp/product/ HTTP/
 INFO 2024-02-16 20:12:05,475 basehttp 9444 9532 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
 INFO 2024-02-16 20:12:06,337 basehttp 9444 9532 "GET /admin/myapp/order/ HTTP/1.1" 200 10183
 INFO 2024-02-16 20:12:06,365 basehttp 9444 9532 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-21 18:32:13,228 autoreload 4372 15172 Watching for file changes with StatReloader
+INFO 2024-02-21 18:32:15,187 views 4372 14496 main was opened
+INFO 2024-02-21 18:32:15,264 basehttp 4372 14496 "GET / HTTP/1.1" 200 10854
+INFO 2024-02-21 18:32:15,309 basehttp 4372 14496 "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 12621
+INFO 2024-02-21 18:32:15,309 basehttp 4372 3748 "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13578
+INFO 2024-02-21 18:32:15,330 basehttp 4372 11572 "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+INFO 2024-02-21 18:32:15,346 basehttp 4372 11572 "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4527
+WARNING 2024-02-21 18:32:15,474 log 4372 11572 Not Found: /favicon.ico
+WARNING 2024-02-21 18:32:15,475 basehttp 4372 11572 "GET /favicon.ico HTTP/1.1" 404 13718
